@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Timer</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  Designed & coded by <a href="https://codepen.io/brispone/" target="_blank">Brad Rispone</a>
+</header>
+<div id="centerpiece">
+  <div id="textplace">
+    <div class=arrowholder>
+      <a href="#" onclick="sessionUp()">
+        <div class="arrow-up"></div>
+      </a>
+      Session Time
+      <a href="#" onclick="sessionDown()">
+        <div class="arrow-down"></div>
+      </a>
+    </div>
+    <div class=arrowholder>
+      <a href="#" onclick="breakUp()">
+        <div class="arrow-up"></div>
+      </a>
+      Break Time
+      <a href="#" onclick="breakDown()">
+        <div class="arrow-down"></div>
+      </a>
+    </div>
+    <a href="#" onclick="sessionStart()">
+      <div class="timerbutton" id="startbutton">Start</div>
+    </a>
+    <a href="#" onclick="resetTimers()">
+      <div class="timerbutton">Reset</div>
+    </a>
+  </div>
+  <div id="work">25:00</div>
+  <div id="break">5:00</div>
+</div>
+<p id="command"></p>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
